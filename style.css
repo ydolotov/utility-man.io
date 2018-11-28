@@ -1,0 +1,41 @@
+body,h1,h2,h3,h4,h5,h6 {font-family: 'Niramit', sans-serif;}
+
+body, html {
+    height: 100%;
+    line-height: 1.8;
+}
+/* Full height image header */
+.bgimg-1 {
+    background-position: center;
+    background-size: cover;
+    background-image: url("Images/bgr1.png");
+    min-height: 80%;
+}
+
+.mission {
+    font-size: 50px;
+}
+
+.team {
+    font-size: 50px;
+}
+
+  /*.bg-text {
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0, 0.4); 
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+}*/
+
+.w3-bar .w3-button {
+    padding: 16px;
+}

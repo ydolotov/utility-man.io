@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html>
+<title>Utility Man</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="text/css" href="ContactFrmCSS/style.css">
+<link rel="stylesheet" type="text/css" href="FooterCSS/footer-distributed-with-address-and-phones.css">
+<link rel="stylesheet" type="text/css" href="PricingCSS/styles.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+<link href="https://fonts.googleapis.com/css?family=Niramit" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<body>
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top">
+        <div class="w3-bar w3-white w3-card" id="myNavbar">
+            <a href="#home" class="w3-bar-item w3-button w3-wide">Utility Man Development</a>
+            <!-- Right-sided navbar links -->
+            <div class="w3-right w3-hide-small">
+                <a href="#about" class="w3-bar-item w3-button">ABOUT US</a>
+                <a href="#team" class="w3-bar-item w3-button"><i class="fa fa-user"></i> TEAM</a>
+                <a href="#pricing" class="w3-bar-item w3-button"><i class="fa fa-euro"></i> PRICING</a>
+                <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
+            </div>
+
+            <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+            <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- Sidebar on small screens when clicking the menu icon -->
+    <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+        <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+        <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+        <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
+        <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">WORK</a>
+        <a href="#pricing" onclick="w3_close()" class="w3-bar-item w3-button">PRICING</a>
+        <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+    </nav>
+
+    <!-- Header with full-height image -->
+    <header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
+        <div class="w3-display-left w3-text-white" style="padding:48px">
+            <span class="w3-jumbo w3-hide-small">Revolutionary Software Development studio</span><br>
+            <span class="w3-large">We know what you want</span>
+            <p><a href="#about" class="w3-button w3-blue w3-padding-large w3-large w3-margin-top  w3-hover-opacity-off">Let's begin</a></p>
+        </div>
+    </header>
+    <!-- About Section -->
+    <div class="w3-container" style="padding:128px 16px" id="about">
+        <h3 class="w3-center mission">What can we do for you?</h3>
+        <p class="w3-center w3-large">Key features of our mission</p>
+        <div class="w3-row-padding w3-center" style="margin-top:64px">
+            <div class="w3-quarter">
+                <i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center"></i>
+                <p class="w3-large">WEB DEVELOPMENT</p>
+                <p>Backend, Frontend, UI/UX.</p>
+            </div>
+            <div class="w3-quarter">
+                <i class="fa fa-mobile w3-margin-bottom w3-jumbo"></i>
+                <p class="w3-large">MOBILE DEVELOPMENT</p>
+                <p>Native iOS/Android/Windows, Cross-platform.</p>
+            </div>
+            <div class="w3-quarter">
+                <i class="fa fa-chrome w3-margin-bottom w3-jumbo"></i>
+                <p class="w3-large">WEB COMMERCE</p>
+                <p>We build your dedicated team of developers &amp; designers for you. Expand your business and reach more potentional clients.</p>
+            </div>
+            <div class="w3-quarter">
+                <i class="fa fa-cog w3-margin-bottom w3-jumbo"></i>
+                <p class="w3-large">IT SUPPORT</p>
+                <p>We support you wherever we can and wherever
+                    you tell us and show a maximum of flexibility.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Promo Section - "We know design" -->
+    <div class="w3-container w3-light-grey" style="padding:128px 16px">
+        <div class="w3-row-padding">
+            <div class="w3-col m6">
+                <h3>WHO WE ARE</h3>
+                <p style="text-align: justify;">We are experienced web &amp; mobile entrepreneurs,
+                    project leaders, architects and developers in the field of PHP,
+                    AngularJS, NodeJS, ReactJS, JAVA enterprise, Frameworks,
+                    Databases, iOS/Android, HTML5/CSS, RestAPI,
+                    Javascript, ES6, WordPress, Drupal, design UI/UX
+                    and much more, and will support you in your projects no
+                    matter how custom or complex they are.</p>
+                <p><a href="#work" class="w3-button w3-black"><i class="fa fa-th"> </i> Contact us</a></p>
+            </div>
+            <div class="w3-col m6">
+                <img class="w3-image w3-round-large" src="Images/computer-connection-data-1181675.jpg" alt="Buildings" width="700" height="394">
+            </div>
+        </div>
+    </div>
+
+    <!-- Team Section -->
+    <div class="w3-container" style="padding:100px 16px" id="team">
+        <h3 class="w3-center team">OUR TEAM</h3>
+        <p class="w3-center w3-large">The ones who runs our company</p>
+        <div class="w3-row-padding w3-grayscale" style="margin-top:64px">
+            <div class="w3-col l3 m6 w3-margin-bottom">
+                <div class="w3-card">
+                    <img class="w3-image w3-round-medium" src="Images/ceo.jpg" style="width:100%">
+                    <div class="w3-container">
+                        <h3>Yura Dolotov</h3>
+                        <p class="w3-opacity">CEO and Founder</p>
+                        <p>Very smart and friendly guy.</p>
+                        <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
+                    </div>
+                </div>
+            </div>
+            <div class="w3-col l3 m6 w3-margin-bottom">
+                <div class="w3-card">
+                    <img class="w3-image w3-round-medium" src="Images/ceo.jpg" alt="Jane" style="width:100%">
+                    <div class="w3-container">
+                        <h3>Nikolay Smirnov</h3>
+                        <p class="w3-opacity">Art Director</p>
+                        <p>Very smart and friendly guy.</p>
+                        <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
+                    </div>
+                </div>
+            </div>
+            <div class="w3-col l3 m6 w3-margin-bottom">
+                <div class="w3-card">
+                    <img class="w3-image w3-round-medium" src="Images/ceo.jpg" style="width:100%">
+                    <div class="w3-container">
+                        <h3>Yura Dolotov</h3>
+                        <p class="w3-opacity">CEO and Founder</p>
+                        <p>Very smart and friendly guy.</p>
+                        <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
+                    </div>
+                </div>
+            </div>
+            <div class="w3-col l3 m6 w3-margin-bottom">
+                <div class="w3-card">
+                    <img class="w3-image w3-round-medium" src="Images/ceo.jpg" style="width:100%">
+                    <div class="w3-container">
+                        <h3>Yura Dolotov</h3>
+                        <p class="w3-opacity">CEO and Founder</p>
+                        <p>Very smart and friendly guy.</p>
+                        <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Promo Section "Statistics" -->
+    <!-- <div class="w3-container w3-row w3-center w3-dark-grey w3-padding-64">
+        <div class="w3-quarter">
+            <span class="w3-xxlarge">14+</span>
+            <br>Partners
+        </div>
+        <div class="w3-quarter">
+            <span class="w3-xxlarge">55+</span>
+            <br>Projects Done
+        </div>
+        <div class="w3-quarter">
+            <span class="w3-xxlarge">89+</span>
+            <br>Happy Clients
+        </div>
+        <div class="w3-quarter">
+            <span class="w3-xxlarge">150+</span>
+            <br>Meetings
+        </div>
+    </div>-->
+
+    <!-- Work Section -->
+    <!--<div class="w3-container" style="padding:100px 16px" id="work">
+        <h3 class="w3-center">OUR WORK</h3>
+        <p class="w3-center w3-large">What we have done for people</p>
+
+        <div class="w3-row-padding" style="margin-top:64px">
+            <div class="w3-col l3 m6">
+                <img src="Images/work.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A microphone">
+            </div>
+            <div class="w3-col l3 m6">
+                <img src="Images/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202018-11-26%20%D0%B2%2013.00.14.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A phone">
+            </div>
+            <div class="w3-col l3 m6">
+                <img src="Images/work.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A drone">
+            </div>
+            <div class="w3-col l3 m6">
+                <img src="Images/work.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Soundbox">
+            </div>
+        </div>
+
+        <div class="w3-row-padding w3-section">
+            <div class="w3-col l3 m6">
+                <img src="Images/work.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A tablet">
+            </div>
+            <div class="w3-col l3 m6">
+                <img src="Images/work.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A camera">
+            </div>
+            <div class="w3-col l3 m6">
+                <img src="Images/work.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A typewriter">
+            </div>
+            <div class="w3-col l3 m6">
+                <img src="Images/work.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A tableturner">
+            </div>
+        </div>
+    </div>-->
+
+    <!-- Modal for full size images on click-->
+    <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+        <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">×</span>
+        <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+            <img id="img01" class="w3-image">
+            <p id="caption" class="w3-opacity w3-large"></p>
+        </div>
+    </div>
+
+    <!-- Skills Section -->
+    <div class="w3-container w3-light-grey w3-padding-64">
+        <div class="w3-row-padding">
+            <div class="w3-col m6">
+                <h2>Our Skills.</h2>
+                <p style="text-align: justify;">Utility Man provides end-to-end development opportunities from strategy and planning to website design and development, as well as full data migration, extensive API integrations, scalability, performance and long-term guidance and maintenance. We have service options and solutions for start-ups, small to mid-size businesses, enterprise organizations and marketing agencies.</p>
+                <p style="text-align: justify;">From front-end to back-end, from prototype to production, we specialize in creating dynamic and engaging mobile applications with industry-leading technology. Whether you need someone to augment your in-house development, enhance an existing application or build something new from scratch, we are yourideal mobile app development partner.</p>
+            </div>
+            <div class="w3-col m6">
+                <p class="w3-wide"><i class="fa fa-camera w3-margin-right"></i>Software Development</p>
+                <div class="w3-grey">
+                    <div class="w3-container w3-blue w3-center" style="width:90%">90%</div>
+                </div>
+                <p class="w3-wide"><i class="fa fa-desktop w3-margin-right"></i>Web Design</p>
+                <div class="w3-grey">
+                    <div class="w3-container w3-blue w3-center" style="width:85%">85%</div>
+                </div>
+                <p class="w3-wide"><i class="fa fa-photo w3-margin-right"></i>IT Support</p>
+                <div class="w3-grey">
+                    <div class="w3-container w3-blue w3-center" style="width:75%">75%</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- OLD PRICING SECTION -->
+    <!-- <div class="w3-container w3-center w3-dark-grey" style="padding:128px 16px" id="pricing">
+        <h3>Our Service</h3>
+        <p class="w3-large">Choose a pricing plan that fits your needs.</p>
+        <div class="w3-row-padding" style="margin-top:64px">
+            <div class="w3-third w3-section">
+                <ul class="w3-ul w3-white w3-hover-shadow">
+                    <li class="w3-sand w3-xlarge w3-padding-32">Personal Portfolio</li>
+                    <li class="w3-padding-16"><b>10GB</b> Storage</li>
+                    <li class="w3-padding-16"><b>10</b> Emails</li>
+                    <li class="w3-padding-16"><b>10</b> Domains</li>
+                    <li class="w3-padding-16"><b>Endless</b> Support</li>
+                    <li class="w3-padding-16">
+                        <h2 class="w3-wide">€50</h2>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="w3-third w3-section">
+                <ul class="w3-ul w3-white w3-hover-shadow">
+                    <li class="w3-pale-red w3-xlarge w3-padding-32">Landing Page</li>
+                    <li class="w3-padding-16"><b>10GB</b> Storage</li>
+                    <li class="w3-padding-16"><b>10</b> Emails</li>
+                    <li class="w3-padding-16"><b>10</b> Domains</li>
+                    <li class="w3-padding-16"><b>Endless</b> Support</li>
+                    <li class="w3-padding-16">
+                        <h2 class="w3-wide">€100</h2>
+                    </li>
+                </ul>
+            </div>
+            <div class="w3-third w3-section">
+                <ul class="w3-ul w3-white w3-hover-shadow">
+                    <li class="w3-red w3-xlarge w3-padding-32">Online Shop</li>
+                    <li class="w3-padding-16"><b>25GB</b> Storage</li>
+                    <li class="w3-padding-16"><b>25</b> Emails</li>
+                    <li class="w3-padding-16"><b>25</b> Domains</li>
+                    <li class="w3-padding-16"><b>Endless</b> Support</li>
+                    <li class="w3-padding-16">
+                        <h2 class="w3-wide">€150</h2>
+                    </li>
+                </ul>
+            </div>
+            <div class="w3-third w3-section">
+                <ul class="w3-ul w3-white w3-hover-shadow">
+                    <li class="w3-blue w3-xlarge w3-padding-32">iOS Development</li>
+                    <li class="w3-padding-16"><b>50GB</b> Storage</li>
+                    <li class="w3-padding-16"><b>50</b> Emails</li>
+                    <li class="w3-padding-16"><b>50</b> Domains</li>
+                    <li class="w3-padding-16"><b>Endless</b> Support</li>
+                    <li class="w3-padding-16">
+                        <h2 class="w3-wide">€15/Hour</h2>
+                    </li>
+                </ul>
+            </div>
+            <div class="w3-third w3-section">
+                <ul class="w3-ul w3-white w3-hover-shadow">
+                    <li class="w3-green w3-xlarge w3-padding-32">Android Development</li>
+                    <li class="w3-padding-16"><b>50GB</b> Storage</li>
+                    <li class="w3-padding-16"><b>50</b> Emails</li>
+                    <li class="w3-padding-16"><b>50</b> Domains</li>
+                    <li class="w3-padding-16"><b>Endless</b> Support</li>
+                    <li class="w3-padding-16">
+                        <h2 class="w3-wide">€15/Hour</h2>
+                    </li>
+                </ul>
+            </div>
+            <div class="w3-third w3-section">
+                <ul class="w3-ul w3-white w3-hover-shadow">
+                    <li class="w3-deep-orange w3-xlarge w3-padding-32">IT Support</li>
+                    <li class="w3-padding-16"><b>50GB</b> Storage</li>
+                    <li class="w3-padding-16"><b>50</b> Emails</li>
+                    <li class="w3-padding-16"><b>50</b> Domains</li>
+                    <li class="w3-padding-16"><b>Endless</b> Support</li>
+                    <li class="w3-padding-16">
+                        <h2 class="w3-wide">From €10</h2>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div> -->
+
+    <!-- PRICING SECTION -->
+    <section class="pricing-table" id="pricing">
+        <div class="container">
+            <div class="block-heading">
+                <h2>Our Services and Pricing</h2>
+                <!--<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna, dignissim nec auctor in, mattis vitae leo.</p>-->
+            </div>
+            <div class="row justify-content-md-center">
+                <div class="col-md-5 col-lg-4">
+                    <div class="item">
+                        <div class="heading">
+                            <h3>Web Portfolio</h3>
+                        </div>
+                        <p>Your stunning and amazing online portfolio is just a few clicks away.</p>
+                        <div class="features">
+                            <h4><span class="feature">Full Support</span> : <span class="value">Yes</span></h4>
+                            <h4><span class="feature">Duration</span> : <span class="value">3-2 Days</span></h4>
+                            <h4><span class="feature">Domain</span> : <span class="value">No</span></h4>
+                        </div>
+                        <div class="price">
+                            <h4>€50</h4>
+                        </div>
+                        <button class="btn btn-block btn-outline-primary" type="submit">ORDER NOW</button>
+                    </div>
+                </div>
+                <div class="col-md-5 col-lg-4">
+                    <div class="item">
+                        <div class="ribbon">Best Value</div>
+                        <div class="heading">
+                            <h3>Landing Page</h3>
+                        </div>
+                        <p>Incredible landing page to get the most out of your buisiness.</p>
+                        <div class="features">
+                            <h4><span class="feature">Full Support</span> : <span class="value">Yes</span></h4>
+                            <h4><span class="feature">Duration</span> : <span class="value">7-10 Days</span></h4>
+                            <h4><span class="feature">Domain</span> : <span class="value">Yes</span></h4>
+                        </div>
+                        <div class="price">
+                            <h4>€100</h4>
+                        </div>
+                        <a href="#contact"><button class="btn btn-block btn-primary" type="submit">ORDER NOW</button></a>
+                    </div>
+                </div>
+
+                <div class="col-md-5 col-lg-4">
+                    <div class="item">
+                        <div class="heading">
+                            <h3>Online Shop</h3>
+                        </div>
+                        <p>We power some of the world's most successful online stores.</p>
+                        <div class="features">
+                            <h4><span class="feature">Full Support</span> : <span class="value">Yes</span></h4>
+                            <h4><span class="feature">Duration</span> : <span class="value">10-14 Days</span></h4>
+                            <h4><span class="feature">Domain</span> : <span class="value">Yes</span></h4>
+                        </div>
+                        <div class="price">
+                            <h4>€150</h4>
+                        </div>
+                        <a href="#contact"> <button class="btn btn-block btn-outline-primary" type="submit"> ORDER NOW</button></a>
+                    </div>
+                </div>
+                <div class="col-md-5 col-lg-4">
+                    <div class="item">
+                        <div class="heading">
+                            <h3>Mobile Development</h3>
+                        </div>
+                        <p>Utility Man has all the services you need to meet your product development goals.</p>
+                        <div class="features">
+                            <h4><span class="feature">Full Support</span> : <span class="value">Yes</span></h4>
+                            <h4><span class="feature">Duration</span> : <span class="value">Hourly work</span></h4>
+                            <h4><span class="feature">Cross Platform</span> : <span class="value"> Yes</span></h4>
+                        </div>
+                        <div class="price">
+                            <h4>€15/Hour</h4>
+                        </div>
+                        <a href="#contact"> <button class="btn btn-block btn-outline-primary" type="submit"> ORDER NOW</button></a>
+                    </div>
+                </div>
+                <div class="col-md-5 col-lg-4">
+                    <div class="item">
+                        <div class="heading">
+                            <h3>SEO Optimization</h3>
+                        </div>
+                        <p>We will rank your website Number 1 on Search Engine.</p>
+                        <div class="features">
+                            <h4><span class="feature">Full Support</span> : <span class="value">Yes</span></h4>
+                            <h4><span class="feature">Duration</span> : <span class="value">From 1 Day</span></h4>
+                            <h4><span class="feature">Platform</span> : <span class="value">Every</span></h4>
+                        </div>
+                        <div class="price">
+                            <h4>From €10</h4>
+                        </div>
+                        <a href="#contact"> <button class="btn btn-block btn-outline-primary" type="submit"> ORDER NOW</button></a>
+                    </div>
+                </div>
+                <div class="col-md-5 col-lg-4">
+                    <div class="item">
+                        <div class="heading">
+                            <h3>IT Support</h3>
+                        </div>
+                        <p>We assist and take care of all your operational IT, Apps &amp; technology needs</p>
+                        <div class="features">
+                            <h4><span class="feature">Full Support</span> : <span class="value">Yes</span></h4>
+                            <h4><span class="feature">Duration</span> : <span class="value">Hourly work</span></h4>
+                            <h4><span class="feature">Availability</span> : <span class="value">24/7</span></h4>
+                        </div>
+                        <div class="price">
+                            <h4>From €10</h4>
+                        </div>
+                        <a href="#contact"> <button class="btn btn-block btn-outline-primary" type="submit"> ORDER NOW</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- OLD Contact Section -->
+  <!--<div class="w3-container w3-light-grey" style="padding:100px 16px" id="contact">
+        <h3 class="w3-center">CONTACT</h3>
+        <p class="w3-center w3-large">Lets get in touch. Send us a message:</p>
+        <div style="margin-top:48px">
+            <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Bulgaria, Burgas</p>
+            <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: +(359) 8939 20967</p>
+            <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: ura.dolotov@mail.ru</p>
+            <br>
+            <form action="/action_page.php" target="_blank">
+                <p><input class="w3-input w3-border" type="text" placeholder="Name" required name="Name"></p>
+                <p><input class="w3-input w3-border" type="text" placeholder="Email" required name="Email"></p>
+                <p><input class="w3-input w3-border" type="text" placeholder="Subject" required name="Subject"></p>
+                <p><input class="w3-input w3-border" type="text" placeholder="Message" required name="Message"></p>
+                <p>
+                    <button class="w3-button w3-black" type="submit">
+                        <i class="fa fa-paper-plane"></i> SEND MESSAGE
+                    </button>
+                </p>
+            </form>
+            Image of location/map 
+            <img src="Images/computer-connection-data-1181675.jpg" class="w3-image w3-greyscale" style="width:100%;margin-top:40px; filter: blur(2px)">
+        </div>
+    </div> -->
+
+    <div class="container" id="contact">
+        <h3 class="w3-center contactHeader">CONTACT US</h3>
+        <div class="wrapper animated bounceInLeft">
+            <div class="company-info">
+                <ul>
+                    <li style="padding-bottom: 20px"><i class="fa fa-map-marker"></i> Bulgaria, Burgas</li>
+                    <li style="padding-bottom: 20px"><i class="fa fa-phone"></i> +(359) 8939 20967</li>
+                    <li style="padding-bottom: 20px"><i class="fa fa-envelope"></i> ura.dolotov@mail.ru</li>
+                </ul>
+            </div>
+            <div class="contact">
+                <h3>Email Us</h3>
+                <form>
+                    <p>
+                        <label>Name</label>
+                        <input type="text" name="name">
+                    </p>
+                    <p>
+                        <label>Company</label>
+                        <input type="text" name="company">
+                    </p>
+                    <p>
+                        <label>Email Address</label>
+                        <input type="email" name="email">
+                    </p>
+                    <p>
+                        <label>Phone Number</label>
+                        <input type="text" name="phone">
+                    </p>
+                    <p class="full">
+                        <label>Message</label>
+                        <textarea name="message" rows="5"></textarea>
+                    </p>
+                 <p>
+                    <button class="w3-button w3-black" type="submit">
+                        <i class="fa fa-paper-plane"></i> SEND MESSAGE
+                    </button>
+                </p>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer-distributed">
+
+        <div class="footer-left">
+
+            <h3>Utility <span>Man</span></h3>
+
+            <p class="footer-links">
+                <a href="#home">Home</a>
+                ·
+                <a href="#pricing">Pricing</a>
+                ·
+                <a href="#about">About</a>
+                ·
+                <a href="#contact">Contact</a>
+            </p>
+
+            <p class="footer-company-name">Utility Man &copy; 2018</p>
+        </div>
+
+        <div class="footer-center">
+
+            <div>
+                <i class="fa fa-map-marker"></i>
+                <p>Bulgaria, Burgas</p>
+            </div>
+
+            <div>
+                <i class="fa fa-phone"></i>
+                <p>+ (359) 8939 20967</p>
+            </div>
+
+            <div>
+                <i class="fa fa-envelope"></i>
+                <p><a href="mailto:ura.dolotov@mail.ru">ura.dolotov@mail.ru</a></p>
+            </div>
+
+            <div>
+                <i class="fa fa-superpowers"></i>
+                <p><a href="#">Utility Man Living Service</a></p>
+            </div>
+
+        </div>
+
+        <div class="footer-right">
+
+            <p class="footer-company-about">
+                <span>About the company</span>
+                Software development studio.
+            </p>
+
+            <div class="footer-icons">
+
+                <a href="https://www.facebook.com/ydolotov"><i class="fa fa-facebook"></i></a>
+                <a href="https://vk.com/ydolotov"><i class="fa fa-vk"></i></a>
+                <a href="https://vk.com/ydolotov"><i class="fa fa-telegram"></i></a>
+                <a href="https://vk.com/ydolotov"><i class="fa fa-github"></i></a>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <script>
+        // Modal Image Gallery
+        function onClick(element) {
+            document.getElementById("img01").src = element.src;
+            document.getElementById("modal01").style.display = "block";
+            var captionText = document.getElementById("caption");
+            captionText.innerHTML = element.alt;
+        }
+
+
+        // Toggle between showing and hiding the sidebar when clicking the menu icon
+        var mySidebar = document.getElementById("mySidebar");
+
+        function w3_open() {
+            if (mySidebar.style.display === 'block') {
+                mySidebar.style.display = 'none';
+            } else {
+                mySidebar.style.display = 'block';
+            }
+        }
+
+        // Close the sidebar with the close button
+        function w3_close() {
+            mySidebar.style.display = "none";
+        }
+    </script>
+
+</body>
+
+</html>
